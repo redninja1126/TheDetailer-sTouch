@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Detailers Touch | Mobile Car Detailing</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f0f0f;
+color:#fff;
+scroll-behavior:smooth;
+}
+
+/* NAVIGATION */
+nav{
+position:fixed;
+width:100%;
+background:#000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+z-index:1000;
+}
+
+.logo{
+font-size:1.3rem;
+font-weight:700;
+color:#00c6ff;
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#fff;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#00c6ff;
+}
+
+/* HERO */
+header{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1607860108855-64acf2078ed9') center/cover no-repeat;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+header h1{
+font-size:3rem;
+animation:fadeUp 1.5s ease;
+}
+
+header p{
+margin:20px 0;
+font-size:1.2rem;
+animation:fadeUp 2s ease;
+}
+
+.btn{
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:#00c6ff;
+color:#fff;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#0072ff;
+transform:scale(1.05);
+}
+
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(40px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+/* SECTIONS */
+section{
+padding:100px 20px;
+text-align:center;
+}
+
+h2{
+margin-bottom:40px;
+font-size:2.2rem;
+}
+
+/* SERVICES */
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+max-width:1100px;
+margin:auto;
+}
+
+.card{
+background:#1c1c1c;
+padding:30px;
+border-radius:20px;
+transition:.4s;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-15px);
+background:#222;
+box-shadow:0 15px 30px rgba(0,198,255,.2);
+}
+
+.price{
+font-size:1.5rem;
+color:#00c6ff;
+margin:15px 0;
+}
+
+/* ABOUT */
+#about p{
+max-width:800px;
+margin:auto;
+font-size:1.2rem;
+line-height:1.8;
+background:#1c1c1c;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,198,255,.1);
+}
+
+/* CONTACT */
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input, textarea{
+padding:12px;
+border:none;
+border-radius:8px;
+}
+
+footer{
+background:#000;
+padding:25px;
+text-align:center;
+margin-top:50px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+header h1{
+font-size:2.2rem;
+}
+.nav-links{
+display:none;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">The Detailers Touch</div>
+<div class="nav-links">
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Book</a>
+</div>
+</nav>
+
+<header id="home">
+<h1>Premium Mobile Car Detailing</h1>
+<p>We Come To You • Affordable • Professional • Convenient</p>
+<a href="#contact"><button class="btn">Book Now</button></a>
+</header>
+
+<section id="services">
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Full Exterior Wash</h3>
+<p class="price">$50</p>
+<p>Thorough vacuuming of seats, carpets, and floor mats
+Through Vacuuming of the trunk
+Interior Window cleaning & screens
+Full wipe down of Seats & Door
+Deodorizing the inside.</p>
+</div>
+
+<div class="card">
+<h3>Interior Cleaning</h3>
+<p class="price">$60</p>
+<p>Exterior foam bath with a foam cannon to remove dirt, grime and debris. 
+Wash with microfiber mitt to avoid contamination 
+Wheel and tire cleaning to remove dirt and grime
+Gentle hand drying to avoid scratching
+Window cleaning.</p>
+</div>
+
+<div class="card">
+<h3>Bundle Deal(Interior & Exterior)</h3>
+<p class="price">$100</p>
+<p>Full interior vacuum (seats, carpets, floor mats, and trunk)
+Windows & Screen cleaning
+Wipe-down of seats, doors, and panels
+interior fragrance
+Exterior foam wash and hand wash
+Wheel and tire cleaning
+Hand drying
+Exterior window cleaning
+Door jamb cleaning
+Steam cleaning (as needed)</p>
+</div>
+
+</div>
+</section>
+
+<section id="about">
+<h2>About Us</h2>
+
+<p>
+We are a car detailing business dedicated to helping customers who don’t have the time to clean their vehicles. 
+We offer affordable prices, high-quality service, and convenient solutions that keep every car looking its best.
+</p>
+
+</section>
+
+<section id="contact">
+<h2>Book Your Detail</h2>
+
+<form>
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<input type="tel" placeholder="Phone Number" required>
+<textarea placeholder="Vehicle Type + Address + Service Needed" required></textarea>
+<button class="btn" type="submit">Submit Booking</button>
+</form>
+
+</section>
+
+<footer>
+© 2026 The Detailers Touch | Mobile Car Detailing
+</footer>
+
+</body>
+</html>
