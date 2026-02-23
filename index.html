@@ -294,12 +294,21 @@ loading="lazy">
 <section id="contact">
 <h2>Book Your Detail</h2>
 
-<form>
-<input type="text" placeholder="Full Name" required>
-<input type="email" placeholder="Email Address" required>
-<input type="tel" placeholder="Phone Number" required>
-<textarea placeholder="Vehicle Type + Address + Service Needed" required></textarea>
+<form action="https://formsubmit.co/thedetailerstouch@gmail.com" method="POST">
+
+<!-- Hidden Settings -->
+<input type="hidden" name="_subject" value="New Booking - The Detailers Touch">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://YOUR-USERNAME.github.io/YOUR-REPO/thankyou.html">
+
+<input type="text" name="Full Name" placeholder="Full Name" required>
+<input type="email" name="Email" placeholder="Email Address" required>
+<input type="tel" name="Phone" placeholder="Phone Number" required>
+<textarea name="Vehicle + Address + Service Needed" placeholder="Vehicle Type + Address + Service Needed" required></textarea>
+
 <button class="btn" type="submit">Submit Booking</button>
+
 </form>
 
 </section>
@@ -310,5 +319,6 @@ loading="lazy">
 
 </body>
 </html>
+
 
 
