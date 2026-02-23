@@ -294,13 +294,11 @@ loading="lazy">
 <section id="contact">
 <h2>Book Your Detail</h2>
 
-<form action="https://formsubmit.co/thedetailerstouch@gmail.com" method="POST">
+<form id="bookingForm">
 
-<!-- Hidden Settings -->
 <input type="hidden" name="_subject" value="New Booking - The Detailers Touch">
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_template" value="table">
-<input type="hidden" name="_next" value="https://YOUR-USERNAME.github.io/YOUR-REPO/thankyou.html">
 
 <input type="text" name="Full Name" placeholder="Full Name" required>
 <input type="email" name="Email" placeholder="Email Address" required>
@@ -311,6 +309,15 @@ loading="lazy">
 
 </form>
 
+<div id="popup" class="popup">
+<div class="popup-content">
+<h3>✅ Booking Submitted!</h3>
+<p>Thank you for choosing The Detailers Touch.  
+We will contact you shortly.</p>
+<button onclick="closePopup()" class="btn">Close</button>
+</div>
+</div>
+
 </section>
 
 <footer>
@@ -319,6 +326,7 @@ loading="lazy">
 
 </body>
 </html>
+
 
 
 
